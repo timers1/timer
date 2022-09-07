@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Plans for Wads Timer</title>
+        <link rel="stylesheet" href="noyesnonostyle.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <audio id="AlarmSound">
+            <source src="AlarmSound.wav" type="audio/wav" />
+            Your browser does not support audio.
+        </audio>
+        <nav>
+            <a href="index.html">Main timer/stopwatch</a>
+            <div class="dropdown">
+                <button class="dropbtn">Games 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="noyesnono.html">No yes No no</a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <h3>How to play</h3>
+            <p>2 people come up, 1 asker and 1 responder. The asker asks questions to try to get the responder to say yes/no. If the responder said yes or no before the time is up, the asker wins and takes the spot as responder and an asker comes up. If the responder didn't say yes or no within the 3 minutes, the responder wins and a new asker comes up. Underneath this is a timer for 3 minutes.</p>
+            <div class="timer">
+                <div class="buttons">
+                    <button id="Start">Start</button>
+                    <button id="Reset">Reset</button>
+                </div>
+                <span id="time">3:00 remaining</span>
+            </div>
+        </main>
+        <script src="noyesnonoscript.js"></script>
+    </body>
+</html>

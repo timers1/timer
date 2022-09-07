@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Plans for Wads Timer</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Main timer/stopwatch</a>
+            <div class="dropdown">
+                <button class="dropbtn">Games 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="noyesnono.html">No yes No no</a>
+                </div>
+              </div>
+        </nav>
+        <main>
+            <div id="stopwatch-tools">
+                <div class="buttons">
+                    <button id="startORpauseStopwatch">start stopwatch</button>
+                    <button id="reset">reset</button>
+                </div>
+                <div class="container">
+                    <span id="time">00:00:00</span> 
+                </div>
+                <div class="buttons">
+                    <button id="lap">lap</button>
+                </div>
+            </div>
+            <div class="laps"></div>
+            <div class="dropdown">
+                <button class="dropbtn">Choose a time for the timer</button>
+                <div class="dropdown-content">
+                    <a href="javascript:;" id="thirtySec">30 sec</a>
+                    <a href="javascript:;" id="oneMin">1 min</a>
+                    <a href="javascript:;" id="twoMin">2 min</a>
+                    <a href="javascript:;" id="fiveMin">5 min</a>
+                    <a href="javascript:;" id="tenMin">10 min</a>
+                    <a href="javascript:;" id="fifteenMin">15 min</a>
+                    <a href="javascript:;" id="thirtyMin">30 min</a>
+                    <a href="javascript:;" id="fourtyFiveMin">45 min</a>
+                    <a href="javascript:;" id="oneHr">1 hr</a>
+                    <a href="javascript:;" id="twoHr">2 hr</a>
+                    <a href="javascript:;" id="Custom">Custom</a>
+                    <a href="javascript:;" id="Stopwatch">Stopwatch</a>
+                </div>
+            </div>
+
+            <div id="custom-time-choice">
+                <span>
+                    <input type="number" id="hr" min="0" max="23" value="0" />:
+                    <input type="number" id="min" min="0" max="59" value="0" />:
+                    <input type="number" id="sec" min="0" max="59" value="0" />
+                </span>
+                <button id="startCustomTime">Set</button>
+            </div>
+            <audio id="AlarmSound" controls>
+                <source src="AlarmSound.wav" type="audio/wav" />
+                Your browser does not support audio.
+            </audio>
+            <div id="timertools">
+                <div id="timer">
+                
+                </div>
+                <div id="istimeup">
+                    
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script> 
+    </body>
+</html>
